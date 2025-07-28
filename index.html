@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikram's Todo App</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Vikram's Todo List</h1>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </div>
+        </header>
+        
+        <div class="todo-input">
+            <input type="text" id="todo-input" placeholder="What do you need to do?">
+            <button id="add-button">
+                <i class="fas fa-plus"></i>
+            </button>
+        </div>
+        
+        <div class="filters">
+            <div class="filter-buttons">
+                <button class="active" data-filter="all">All</button>
+                <button data-filter="pending">Pending</button>
+                <button data-filter="completed">Completed</button>
+            </div>
+            <button id="clear-completed">Clear Completed</button>
+        </div>
+        
+        <ul class="todo-list">
+            <!-- Todo items will be inserted here via JavaScript -->
+        </ul>
+        
+        <div class="todo-stats">
+            <span id="tasks-count">0 tasks left</span>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
